@@ -11,3 +11,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+
+# Stuff I've added
+gem 'middleman-gh-pages'
