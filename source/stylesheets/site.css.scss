@@ -105,17 +105,17 @@ body.contact nav a {
   &.one {
     border-left: 500px solid transparent;
     border-right: 500px solid transparent;
-    border-bottom: 600px solid #f7d53d;
+    border-bottom: 600px solid rgba(173,216,199,0.1);
   }
   &.two {
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-bottom: 300px solid #f7d53d;
+    border-bottom: 300px solid rgba(173,216,199,0.1);
   }
   &.three {
     border-left: 300px solid transparent;
     border-right: 300px solid transparent;
-    border-bottom: 400px solid #f7d53d;
+    border-bottom: 400px solid rgba(173,216,199,0.1);
   }
 }
 
