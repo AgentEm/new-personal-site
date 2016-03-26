@@ -55,13 +55,42 @@ nav {
   a {
     text-decoration: none;
     color: rgb(85,98,112);
+    &:hover {
+      color: darken(rgb(85,98,112), 10);
+    }
+  }
+  a:not(.text-logo) {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border: 2px solid;
     border-radius: 3px;
-    &:hover {
-      color: darken(rgb(85,98,112), 50);
-    }
+  }
+  a.text-logo {
+    font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    text-align: left;
+    line-height: 1;
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem;
+  }
+}
+body.about nav a {
+  color: rgb(255,0,102);
+  &:hover {
+    color: darken(rgb(255,0,102), 10);
+  }
+}
+body.portfolio nav a {
+  color: rgb(251,184,41);
+  &:hover {
+    color: darken(rgb(251,184,41), 10);
+  }
+}
+body.contact nav a {
+  color: rgb(173,216,199);
+  &:hover {
+    color: darken(rgb(173,216,199), 10);
   }
 }
 
