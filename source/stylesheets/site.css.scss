@@ -94,18 +94,35 @@ body.contact nav a {
   }
 }
 
-// .triangle{
-//   animation: triangle 200s infinite ease-in-out;
-//   	width: 0;
-// 	height: 0;
-// 	border-left: 20px solid transparent;
-// 	border-right: 20px solid transparent;
-// 	border-top: 30px solid #f7d53d;
-// }
-// @keyframes triangle{
-//   @for $j from 1 through 99{
-//     #{percentage($j)/100}{
-// border-top-color: rgba(random(255),random(255),random(255),random(100)/100);
-//     }
-//   }
-// }
+.triangle {
+  animation: triangle-animation 500s infinite ease-in-out;
+  width: 0;
+	height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  &.one {
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 600px solid #f7d53d;
+  }
+  &.two {
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 300px solid #f7d53d;
+  }
+  &.three {
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 400px solid #f7d53d;
+  }
+}
+
+@keyframes triangle-animation {
+  @for $j from 1 through 99{
+    #{percentage($j)/100}{
+border-bottom-color: rgba(random(255),random(255),random(255),0.1);
+    }
+  }
+}
