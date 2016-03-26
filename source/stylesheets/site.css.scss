@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "normalize";
 @import "skeleton";
+@import "twemoji-awesome";
 
 .header-text {
   text-align: center;
@@ -94,6 +95,13 @@ body.contact nav a {
   }
 }
 
+.about-text {
+  margin-top: 10%;
+  color: #333;
+  padding: 0rem 5rem;
+  max-width: 60rem;
+  font-size: 1.7rem;
+}
 .triangle {
   animation: triangle-animation 500s infinite ease-in-out;
   width: 0;
@@ -125,4 +133,9 @@ body.contact nav a {
 border-bottom-color: rgba(random(255),random(255),random(255),0.1);
     }
   }
+}
+
+.about ul {
+  list-style-type: none;
+  margin-left: 2rem;
 }
