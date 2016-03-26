@@ -109,7 +109,7 @@ body.contact nav a {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   &.one {
     border-left: 500px solid transparent;
     border-right: 500px solid transparent;
