@@ -2,14 +2,10 @@
 @import "normalize";
 @import "skeleton";
 
-.header {
+.header-text {
   text-align: center;
   text-transform: lowercase;
   color: #fff;
-  font-family: "Cabin";
-  padding: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
   z-index: 1;
   position: absolute;
   top: 50%;
@@ -19,6 +15,7 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   h1 {
+    font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
     height: inherit;
     margin-bottom: 0;
     font-weight: 400;
@@ -26,7 +23,7 @@
   }
 }
 .background-video {
-  position: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -49,3 +46,37 @@
         display: none;
     }
 }
+
+nav {
+  text-align: right;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  a {
+    text-decoration: none;
+    color: rgb(85,98,112);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid;
+    border-radius: 3px;
+    &:hover {
+      color: darken(rgb(85,98,112), 50);
+    }
+  }
+}
+
+// .triangle{
+//   animation: triangle 200s infinite ease-in-out;
+//   	width: 0;
+// 	height: 0;
+// 	border-left: 20px solid transparent;
+// 	border-right: 20px solid transparent;
+// 	border-top: 30px solid #f7d53d;
+// }
+// @keyframes triangle{
+//   @for $j from 1 through 99{
+//     #{percentage($j)/100}{
+// border-top-color: rgba(random(255),random(255),random(255),random(100)/100);
+//     }
+//   }
+// }
