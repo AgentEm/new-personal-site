@@ -14,3 +14,10 @@ gem 'middleman-livereload'
 
 # Stuff I've added
 gem 'middleman-gh-pages'
+gem 'middleman-blog'
+
+# For feed.xml.builder
+gem "builder", "~> 3.0"
+
+# Markdown parser
+gem 'redcarpet', '~> 3.3', '>= 3.3.3'
